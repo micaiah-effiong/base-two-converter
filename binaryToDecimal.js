@@ -19,7 +19,7 @@ function binaryToDecimal(val){
 		var argLength = binary.length-1;
 		// console.log("binary length", binary.length);
 
-		if(binary.length == 1 && binary[0]>1){
+		if(binary.length == 1 && binary[0]== (0||1)){
 			return binary.join('');
 		}else{
 			for (var i = 0; i < binary.length; i++) {
