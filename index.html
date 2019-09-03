@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binary To Decimal</title>
+</head>
+<body>
+	<h1 id="display"></h1>
+	<input type="number" min="0" id="text">
+
+	<script type="text/javascript">
+		let text = document.querySelector('#text');
+		text.oninput = ()=>{
+			document.querySelector('#display').innerText = binaryToDecimal(text.value);
+			console.log(binaryToDecimal(text.value));
+		}
+	</script>
+
+	<script type="text/javascript" src="binaryToDecimal.js"></script>
+</body>
+</html>
